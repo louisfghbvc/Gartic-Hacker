@@ -36,9 +36,13 @@ def StartGame():
 
         btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.btYellowBig.ic-playHome")))
         btn.click()
+
+        '''
         # bullshit advertisement
         btn = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#gphone > button")))
         btn.click()
+        '''
+
         # ok button enter
         ok_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.btYellowBig.ic-yes")))
         ok_btn.click()
